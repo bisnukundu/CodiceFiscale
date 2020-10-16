@@ -43,7 +43,7 @@
                     <!-- Left -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link waves-effect" href="index.php">Home
+                            <a class="nav-link waves-effect" href="index.html">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -89,11 +89,9 @@
     <main class="mt-5 pt-5">
         <div class="container">
             <!--Section: Jumbotron-->
-            <div class="alert font-weight-bold alert-warning alert-dismissible fade show msg" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
+            <div class="alert font-weight-bold alert-warning alert-dismissible fade msg show " role="alert">
+                
+            </div>
             <section class="card wow fadeIn code_form"
                 style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
                 <!-- form  -->
@@ -128,7 +126,7 @@
                     <div class="row">
                         <div class="col-8"> <input required type="text" id="defaultRegisterPhonePassword"
                                 class="birth_place form-control" placeholder="LUOGO DI NASCITA"></div>
-                        <div class="col-4"><input maxlength="2" class="form-control province"
+                        <div class="col-4"><input required maxlength="2" class="form-control province"
                                 placeholder="PROVINCIA (SIGLA)" type="text">
                         </div>
                     </div>
@@ -136,7 +134,7 @@
                     <div class="d-flex mt-5">
                         <div class="col-6">
                             <div class="form-check form-check-inline">
-                                <input type="radio" name="gender" class="form-check-input gender" id="materialInline1"
+                                <input required type="radio" name="gender" class="form-check-input gender" id="materialInline1"
                                     value="M" />
                                 <label class="form-check-label text-white font-weight-bold"
                                     for="materialInline1">Male</label>
@@ -144,7 +142,7 @@
                         </div>
                         <div class="col-6">
                             <div class="form-check form-check-inline">
-                                <input type="radio" name="gender" class="form-check-input gender" id="materialInline2"
+                                <input required type="radio" name="gender" class="form-check-input gender" id="materialInline2"
                                     value="F" />
                                 <label class="form-check-label text-white font-weight-bold"
                                     for="materialInline2">Female</label>
@@ -175,44 +173,45 @@
                                 value="" />
                         </div>
                     </div>
-
-                    <div class="form-row mb-4">
-                        <div class="col">
-                            <!-- First name -->
-                            <input type="text" value="*************" disabled name="surname"
-                                id="defaultRegisterFormFirstName" class="form-control" placeholder="SURNAME" />
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" value="*************" disabled name="first_name"
-                                id="defaultRegisterFormLastName" class="form-control" placeholder="FIRST NAME" />
-                        </div>
-                    </div>
-
-                    <!-- E-mail -->
-                    <input type="text" disabled id="defaultRegisterFormEmail"
-                        class="birth_date_show form-control mb-4" />
-
-
-                    <!-- Phone number -->
-                    <input type="text" disabled id="defaultRegisterPhonePassword" class="birth_place_show form-control"
-                        placeholder="BIRTH PLACE" />
-
-                    <div class="d-flex mt-5">
-                        <div class="col-6">
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input gender_show_male male" id="materialInline1"
-                                    value="male" name="gender">
-                                <label class="form-check-label text-white font-weight-bold"
-                                    for="materialInline1">Male</label>
+                    <div class="code_check_and_hide">
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- First name -->
+                                <input type="text" value="*************" disabled name="surname"
+                                    id="defaultRegisterFormFirstName1" class="form-control" placeholder="SURNAME" />
+                            </div>
+                            <div class="col">
+                                <!-- Last name -->
+                                <input type="text" value="*************" disabled name="first_name"
+                                    id="defaultRegisterFormLastName2" class="form-control" placeholder="FIRST NAME" />
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input gender_show_female female" value="female"
-                                    id="materialInline1" name="gender" />
-                                <label class="form-check-label text-white font-weight-bold"
-                                    for="materialInline1">Female</label>
+
+                        <!-- E-mail -->
+                        <input type="text" disabled id="defaultRegisterFormEmail11"
+                            class="birth_date_show form-control mb-4" />
+
+
+                        <!-- Phone number -->
+                        <input type="text" disabled id="defaultRegisterPhonePassword1"
+                            class="birth_place_show form-control" placeholder="BIRTH PLACE" />
+
+                        <div class="d-flex mt-5">
+                            <div class="col-6">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input gender_show_male male"
+                                        id="materialInline1" value="male" name="gender">
+                                    <label class="form-check-label text-white font-weight-bold"
+                                        for="materialInline1">Male</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input gender_show_female female"
+                                        value="female" id="materialInline1" name="gender" />
+                                    <label class="form-check-label text-white font-weight-bold"
+                                        for="materialInline1">Female</label>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -30,3 +30,13 @@ footer{
 .msg{
     display: none;
 }
+.code_check_and_hide{
+    display: none;
+}
+
+.code_check_and_show{
+    display: block;
+}
+input[type='text']{
+    text-transform: uppercase;
+}
