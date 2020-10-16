@@ -1,0 +1,32 @@
+.card-comments img{width:4rem}
+body{
+ position: relative;
+ padding-bottom: 150px;
+ min-height: 100vh;
+}
+footer{
+    bottom: 0px;
+    width: 100%;
+    position: absolute;
+}
+.form-check-inline .form-check-input {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.sidebar_img_bisnu{
+    width: 100px;
+    height: 100px;
+}
+.show_data{
+    display: none;
+}
+.code_show_place{
+    display: none !important;
+}
+.code_show_place_block{
+    display: block !important;
+}
+.msg{
+    display: none;
+}

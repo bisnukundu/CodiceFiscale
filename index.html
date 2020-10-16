@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bisnu kundu</title>
+    <!-- Font Awesome -->
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="assets/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="assets/css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="grey lighten-3">
+
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="index.php">
+                    <strong class="blue-text">Bisnu kundu</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="index.php">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item>">
+                            <a class="nav-link waves-effect" href="">About Us</a>
+
+                        </li>
+                        <li class="nav-item>">
+                            <a class="nav-link waves-effect" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item>">
+                            <a class="nav-link waves-effect" href="posts.php">Blogs</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="" class="nav-link waves-effect">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link waves-effect">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link waves-effect">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <main class="mt-5 pt-5">
+        <div class="container">
+            <!--Section: Jumbotron-->
+            <div class="alert font-weight-bold alert-warning alert-dismissible fade show msg" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            <section class="card wow fadeIn code_form"
+                style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+                <!-- form  -->
+                <p class="h4 text-center bg-primary mb-4 d-inline-block p-4 text-white mb-3 code_show_place">FISHCAL
+                    CODE : <span class="codice_fiscal code_copy"></span><button
+                        class="btn btn_copy btn-info">COPY</button></p>
+                <form class="text-center border border-light p-5 cal_btn">
+                    <div class="container d-flex mb-5">
+                        <div class="col-6"><a class="text-white h4 btn-block btn btn-info">Fiscal
+                                Code</a></div>
+                        <div class="col-6"><a class="text-white h4 btn-block btn btn-info data_show_btn">Reverse tax
+                                code</a></div>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- Sure name -->
+                            <input required type="text" id="defaultRegisterFormFirstName" class="form-control surname"
+                                placeholder="COGNOME">
+                        </div>
+                        <div class="col">
+                            <!-- First name -->
+                            <input required type="text" id="defaultRegisterFormLastName" class="form-control first_name"
+                                placeholder="NOME">
+                        </div>
+                    </div>
+
+                    <!-- Birth_Date -->
+                    <input required type="date" id="defaultRegisterFormEmail" class="form-control mb-4 birth_date">
+
+                    <!-- Birth_Place -->
+                    <div class="row">
+                        <div class="col-8"> <input required type="text" id="defaultRegisterPhonePassword"
+                                class="birth_place form-control" placeholder="LUOGO DI NASCITA"></div>
+                        <div class="col-4"><input maxlength="2" class="form-control province"
+                                placeholder="PROVINCIA (SIGLA)" type="text">
+                        </div>
+                    </div>
+                    <!-- Gender -->
+                    <div class="d-flex mt-5">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" class="form-check-input gender" id="materialInline1"
+                                    value="M" />
+                                <label class="form-check-label text-white font-weight-bold"
+                                    for="materialInline1">Male</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" class="form-check-input gender" id="materialInline2"
+                                    value="F" />
+                                <label class="form-check-label text-white font-weight-bold"
+                                    for="materialInline2">Female</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Sign up button -->
+                    <button class="btn btn-info my-4 btn-block font-weight-bold" type="submit">CALCULATE</button>
+
+                </form>
+                <!-- form -->
+            </section>
+            <!-- Show Data  -->
+            <section class="card wow fadeIn show_data"
+                style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+                <!-- form  -->
+                <form class="text-center border check_btn border-light p-5">
+                    <div class="container d-flex mb-5">
+                        <div class="col-6"><a href="index.html" class="text-white h4 btn-block btn btn-info">Fiscal
+                                Code</a></div>
+                        <div class="col-6"><a class="text-white h4 btn-block btn btn-info">Reverse tax code</a></div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col-6 mx-auto">
+                            <!-- First name -->
+                            <input class="form-control fiscale_code_show" placeholder="Codice Fiscale" type="text"
+                                value="" />
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- First name -->
+                            <input type="text" value="*************" disabled name="surname"
+                                id="defaultRegisterFormFirstName" class="form-control" placeholder="SURNAME" />
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" value="*************" disabled name="first_name"
+                                id="defaultRegisterFormLastName" class="form-control" placeholder="FIRST NAME" />
+                        </div>
+                    </div>
+
+                    <!-- E-mail -->
+                    <input type="text" disabled id="defaultRegisterFormEmail"
+                        class="birth_date_show form-control mb-4" />
+
+
+                    <!-- Phone number -->
+                    <input type="text" disabled id="defaultRegisterPhonePassword" class="birth_place_show form-control"
+                        placeholder="BIRTH PLACE" />
+
+                    <div class="d-flex mt-5">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input gender_show_male male" id="materialInline1"
+                                    value="male" name="gender">
+                                <label class="form-check-label text-white font-weight-bold"
+                                    for="materialInline1">Male</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input gender_show_female female" value="female"
+                                    id="materialInline1" name="gender" />
+                                <label class="form-check-label text-white font-weight-bold"
+                                    for="materialInline1">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sign up button -->
+                    <button class="btn btn-info my-4 btn-block font-weight-bold" name="verify_btn"
+                        type="submit">VERIFICATION OF TAX CODE</button>
+                </form>
+                <!-- form -->
+            </section>
+        </div>
+    </main>
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+
+        <hr class="my-4">
+
+        <!-- Social icons -->
+        <div class="pb-4">
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook-f mr-3"></i>
+            </a>
+
+            <a href="#" target="_blank">
+                <i class="fab fa-twitter mr-3"></i>
+            </a>
+
+            <a href="#" target="_blank">
+                <i class="fab fa-youtube mr-3"></i>
+            </a>
+
+            <a href="#" target="_blank">
+                <i class="fab fa-google-plus-g mr-3"></i>
+            </a>
+
+            <a href="#" target="_blank">
+                <i class="fab fa-dribbble mr-3"></i>
+            </a>
+
+            <a href="https://pinterest.com/" target="_blank">
+                <i class="fab fa-pinterest mr-3"></i>
+            </a>
+
+            <a href="https://github.com/bisnukundu/" target="_blank">
+                <i class="fab fa-github mr-3"></i>
+            </a>
+
+            <a href="http://codepen.io/" target="_blank">
+                <i class="fab fa-codepen mr-3"></i>
+            </a>
+        </div>
+        <!-- Social icons -->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            Copyright <a href="" target="_blank"> Bisnu kundu </a>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="assets/js/all.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+
+    </script>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "fs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -o bundle.js",
+    "watch": "watchify index.js -o bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "calcolo-codice-fiscale": "^1.1.33",
+    "codice-fiscale-js": "^2.3.6",
+    "faker": "^5.1.0"
+  },
+  "devDependencies": {
+    "watchify": "^3.11.1"
+  }
+}
